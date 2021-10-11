@@ -5,7 +5,7 @@ class Cliente {
     constructor(nome, apelido, genero, altura, peso) { 
         this.nome = nome; 
         this.apelido = apelido; 
-        this.genero = genero;
+        this.genero = genero; 
         this.altura = altura;
         this.peso = peso;
 
