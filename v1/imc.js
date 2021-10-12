@@ -22,9 +22,8 @@ class Cliente {
 }
 
 class TipoDesporto {
-    constructor(nome, desporto) {
-        this.nome = nome;
-        this.desporto = desporto;
+    constructor(nomeDesporto) {
+        this.nomeDesporto = nomeDesporto;
     }
 }
 
