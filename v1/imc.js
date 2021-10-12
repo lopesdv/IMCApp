@@ -47,9 +47,7 @@ function SituacaoPeso(imc) {  //Logica para a Situação de Peso do Cliente com 
         SituacaoPeso = "Obesidade"
     }
 
-    return SituacaoPeso
-
-
+    return SituacaoPeso;
   
 }
 
