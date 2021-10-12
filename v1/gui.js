@@ -1,3 +1,4 @@
-import {imc} from "./imc.js";
+import {imc, Cliente} from "./imc.js";
+
 
 document.getElementById("resultado")
