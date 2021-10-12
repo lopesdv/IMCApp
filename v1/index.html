@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="imc.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -21,12 +22,13 @@
         <input type="text" id="Genero">
         <br>
         <br>
-        <label for="">Altura</label>
-        <input type="text" id="altura">
+        <label for="">Altura (m)</label>
+        <input type="text" id="altura" placeholder="ex: 1.7">
         <br>
         <br>
-        <label for="">Peso</label>
-        <input type="text" id="peso">
+        <label for="">Peso (Kg)</label>
+        <input type="text" id="peso" placeholder="ex: 74.2">
+        <input type="submit" value="Calcular" class="calcular" onclick="calcular()">
 
     </div>
 
