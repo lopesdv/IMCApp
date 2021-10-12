@@ -1,6 +1,6 @@
 export const imc = {
     nome: "IMC"
-}; // declara uma constante e atribui o valor "Armazém" (um 'string', uma cadeia de carateres)
+}; // declara uma constante e atribui o valor "Imc" (um 'string', uma cadeia de carateres)
 
 class Cliente {
     #nascimento; // Apenas campos privados devem obrigatóriamente ser declaradas
