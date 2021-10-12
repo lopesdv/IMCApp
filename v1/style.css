@@ -1,0 +1,33 @@
+div, table {
+    margin: 10px 30px;
+    padding: 10px;
+    border: 1px solid rgb(122, 228, 255);
+    box-shadow: 2.5px 2.5px 5px rgb(122, 228, 255);
+}
+
+div.info {
+    position: fixed;
+    right: 0;
+    top: 0;
+    font-size: 8pt;
+    transition: background-color 5s;
+}
+
+div.resultado {
+    background-color: rgb(122, 228, 255);
+    transition: background-color 1s;
+}
+
+tr {
+    font-size: 10pt;
+}
+
+th {
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+td {
+    white-space: pre;
+    padding: 0px 10px;
+}
