@@ -1,4 +1,4 @@
-export const imc = {
+ const imc = {
     nome: "IMC"
 }; // declara uma constante e atribui o valor "Imc" (um 'string', uma cadeia de carateres)
 
@@ -32,8 +32,18 @@ class TipoDesporto {
 
 
 
-function SituacaoPeso(imc) {  //Logica para a Situação de Peso do Cliente com base no IMC Calculado em cima 
+function calcular(altura, peso, imc) {  //Logica para a Situação de Peso do Cliente com base no IMC Calculado em cima 
+   
     let SituacaoPeso = ""
+
+
+    altura = (document.getElementById("altura").value)/100;
+    peso = document.getElementById("peso").value;
+
+    imc = (peso/(altura*altura));
+
+
+   
 
     if(imc < 18.5){
         SituacaoPeso = "Baixo Peso"
@@ -49,10 +59,7 @@ function SituacaoPeso(imc) {  //Logica para a Situação de Peso do Cliente com 
         SituacaoPeso = "Obesidade"
     }
 
-    return SituacaoPeso;
+    document.getElementById("resultado").innerText= SituacaoPeso
   
 }
 
-Consulta.prototype.imprimir = function() {
-    return `O teu IMC é ${this.cliente} no desporto ${this.TipoDesporto} em ${this.data}`;
-}

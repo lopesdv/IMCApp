@@ -1,3 +1,19 @@
+
+h1{
+    color: white;
+}
+
+h2,h3{
+     color: #D4D4D2;
+     
+ }
+
+.area{
+    display: flex;
+    justify-content: center;
+}
+
+ 
  table {
     margin: 10px 30px;
     padding: 10px;
@@ -33,6 +49,37 @@ td {
 }
 
 .input_area{
+    width: 100%;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    margin-right: 20px;
+}
+
+.calculadora{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1c1c1c;
+    padding: 2em;
+    border-radius:0.7em;
+    width: 20em;
+    
+}
+
+input{
+    height: 2em;
+
+}
+
+button{
+height: 3em;
+width: 100%;
+background-color: #FF9500;
+border: none;
+color: white;
+}
+
+button:hover{
+    cursor: pointer;
 }
