@@ -4,10 +4,10 @@
 
  class Cliente {
     #nascimento; // Apenas campos privados devem obrigatóriamente ser declaradas
-    constructor(nome, apelido, genero, altura, peso, imc) { 
+    constructor(nome, apelido, desporto, altura, peso, imc) { 
         this.nome = nome; 
         this.apelido = apelido; 
-        this.genero = genero; 
+        this.desporto = desporto; 
         this.altura = altura;
         this.peso = peso;
         this.imc = (peso/(altura*altura)).toFixed(1); //função onde é feito o calculo com a formula IMC = peso / (altura x altura)
@@ -32,6 +32,19 @@ class TipoDesporto {
 
 
 
+const Desportos = {
+    A: "Futebol",
+    B: "Surf",
+    C: "Tenis"
+};
+
+const marcelo = new Cliente("Marcelo","Lopes", Desportos.A,177,68);
+
+
+const Clientes = new Map();
+
+
+
 function calcular(altura, peso, imc) {  //Logica para a Situação de Peso do Cliente com base no IMC Calculado em cima 
    
     let SituacaoPeso = ""
@@ -40,26 +53,27 @@ function calcular(altura, peso, imc) {  //Logica para a Situação de Peso do Cl
     altura = (document.getElementById("altura").value)/100;
     peso = document.getElementById("peso").value;
 
-    imc = (peso/(altura*altura));
+    imc = (peso/(altura*altura)).toFixed(1);
 
 
    
 
     if(imc < 18.5){
-        SituacaoPeso = imc+ " " +"Baixo Peso"
+        SituacaoPeso =  "Baixo Peso"
 
     } else if (imc >= 18.5 && imc <= 24.9 ){
-        SituacaoPeso = imc+ " " + "Peso normal"
+        SituacaoPeso = "Peso normal"
 
     } else if (imc >= 25 && imc <= 35 ){
 
-        SituacaoPeso = imc+ " " + "Peso em Excesso"
+        SituacaoPeso = "Peso em Excesso"
     } else if (imc >35){
 
-        SituacaoPeso = imc+ " " + "Obesidade"
+        SituacaoPeso = "Obesidade"
     }
 
-    document.getElementById("resultado").innerText= SituacaoPeso
+    document.getElementById("tabela").innerText= imc+ " " + SituacaoPeso
+   
   
 }
 
