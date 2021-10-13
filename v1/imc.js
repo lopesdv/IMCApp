@@ -1,8 +1,8 @@
- const imc = {
+  const imc = {
     nome: "IMC"
 }; // declara uma constante e atribui o valor "Imc" (um 'string', uma cadeia de carateres)
 
-class Cliente {
+ class Cliente {
     #nascimento; // Apenas campos privados devem obrigatóriamente ser declaradas
     constructor(nome, apelido, genero, altura, peso, imc) { 
         this.nome = nome; 
@@ -46,17 +46,17 @@ function calcular(altura, peso, imc) {  //Logica para a Situação de Peso do Cl
    
 
     if(imc < 18.5){
-        SituacaoPeso = "Baixo Peso"
+        SituacaoPeso = imc+ " " +"Baixo Peso"
 
     } else if (imc >= 18.5 && imc <= 24.9 ){
-        SituacaoPeso = "Peso normal"
+        SituacaoPeso = imc+ " " + "Peso normal"
 
     } else if (imc >= 25 && imc <= 35 ){
 
-        SituacaoPeso = "Peso em Excesso"
+        SituacaoPeso = imc+ " " + "Peso em Excesso"
     } else if (imc >35){
 
-        SituacaoPeso = "Obesidade"
+        SituacaoPeso = imc+ " " + "Obesidade"
     }
 
     document.getElementById("resultado").innerText= SituacaoPeso
