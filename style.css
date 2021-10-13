@@ -1,8 +1,8 @@
-div, table {
+ table {
     margin: 10px 30px;
     padding: 10px;
-    border: 1px solid rgb(122, 228, 255);
-    box-shadow: 2.5px 2.5px 5px rgb(122, 228, 255);
+    border: 1px solid rgb(200, 234, 243);
+    box-shadow: 2.5px 2.5px 5px rgb(200, 234, 243);
 }
 
 div.info {
@@ -14,7 +14,7 @@ div.info {
 }
 
 div.resultado {
-    background-color: rgb(122, 228, 255);
+    background-color: rgb(200, 234, 243);
     transition: background-color 1s;
 }
 
@@ -30,4 +30,9 @@ th {
 td {
     white-space: pre;
     padding: 0px 10px;
+}
+
+.input_area{
+    display: flex;
+    align-items: center;
 }
